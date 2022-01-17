@@ -1,0 +1,617 @@
+
+@media (max-width:1579px) {
+  header{
+    height: 5em;
+    background:#fff !important;
+    box-shadow: $header_shadow;
+    .logo {
+      padding-right: 0;
+    }
+    .nav {
+      width: 105%;
+      padding-left: 10%;
+      padding-right: 0%;
+      top: 0;
+      &_hover_wr {top: 100%; margin-top: 0;}
+      
+      &_list.ml-4{
+        margin-left: 0;
+        margin-top: 10px;
+      }
+      &_link {
+        padding: 1.4em .8em;
+        &:hover .nav_hover_wr{
+        visibility: visible;
+        opacity: 1;
+        }
+      }
+      &_lang {
+        border-color: $lang_border !important;
+        float: right;
+        margin-top: 20px !important;
+        &_item{
+        color: $lang_border !important;
+        
+        }
+      }
+    }
+    &.open {
+      height: 360px;
+      &::after {
+        opacity: 1;
+        top: 80px;
+        left: 0;
+      }
+    }
+  }
+  .fp-section.fp-table, .fp-slide.fp-table {padding-right: 3%; margin: 0; }
+  .main_1 .fp-slidesNav.bottom {margin-left: 4%  !important; bottom: 50px;}
+  .main_1 .slide .row.wrapper {margin-left: 5%;}
+}
+@media (min-width:1281px) {
+  header {
+    
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width:1280px) {
+ .fp-section.fp-table, .fp-slide.fp-table {padding-right:  0;}
+/*sub*/
+  .sub_txt{z-index: 10;}
+
+  /*beauty program > Remote Consultation*/
+  .sub.beauty > .sub_visual{margin-left: 0; margin-right: 0;}
+  .sub.beauty > .sub_visual:after{top: inherit; bottom: 0; right: 0; width: 290px; height: 260px; background-size: contain; background-repeat: no-repeat;}
+  .sub.beauty .remote{margin-top: 50px;}
+
+  /*beauty program > Recommend Doctors*/
+  .sub.beauty .brd_gall_box_in{width: 100%;}
+  .sub.beauty .brd_gall_thumb{position: relative; min-height: auto; height: 0; padding-bottom: 122.63%;}
+  .sub.beauty .brd_gall_thumb img{position: absolute; /*top: 50%; left: 50%; z-index: 1; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);*/}
+.main_1 .slide .row.wrapper {margin-top: -50px;}
+li.dash {margin-top: 5px;}
+.wrapper {
+  width: 100%;
+  padding: 0 2em;
+}
+h2 {font-size: 2em;}
+#health .last_list{
+  margin-bottom: 3em;
+  h4 {font-size: 1.5em;}
+} 
+.cont_title {font-size: 1.3em;}
+#health .step_title {font-size: .98em;}
+.service_ic .ic_inner {float: none;}
+  header{
+    .logo{
+        padding: 0;
+        margin: 0;
+      }
+    .nav {
+      &_hamburger {
+        cursor: pointer;
+        display: block;
+        &.open {
+        span:nth-child(1) {
+            transform: rotate(45deg);
+            transform-origin: center;
+            transition: .3s ease-in-out;
+            top: 10px;
+          }
+          span:nth-child(3) {
+            transform-origin: center;
+            transform: rotate(-45deg);
+            transition: .3s ease-in-out;
+            top: 10px;
+          }
+          span:nth-child(2) {
+            transition: .3s ease-in-out;
+            opacity: 0;
+          }
+        }
+      }
+      &_list{
+      display: none;
+      li.relative{
+        max-height: 3em;
+      }
+      }
+      &_mo{
+        display:block;
+        width: 104%;
+        &.open {
+          .nav_mo_menu {
+            left: -3%;
+            width: 103%;
+          }
+          
+        }
+        li.relative {
+          &.active {
+            .nav_hover_wr {
+              height: auto;
+              opacity: 1;
+              visibility: visible;
+              display: block;
+            }
+            .arrow {
+              transform: rotate(45deg);
+              transition: .3s;
+            }
+          }
+        }
+      }
+      &_lang {
+        font-size: 1.2em;
+        margin: 2em 1em;
+        .active_box {
+          padding: 1em;
+        }
+      }
+    }
+  }
+  .main{
+    &_1{
+      &_img {
+        left: -120px;
+      }
+      &_txt {
+        padding-right: 2em;
+      }
+      .fp-slidesNav.bottom {
+        bottom: 100px;
+      }
+    }
+    &_2{
+      background-position: 400% 10%;
+      &_img {
+        margin-right: 0;
+        margin-left: 0;
+      }
+      &_left {
+        width: 100%;
+        margin-top: 8em;
+        padding-right: 0;
+      }
+    }
+    &_3{
+      .wbox {
+        margin: 0 auto 2em;
+        padding: 2em 1em;
+        height: auto;
+        width: 47%;
+        min-height: 360px;
+        &_img {
+          width: 90%;
+          height: 240px;
+          margin: 0 auto;
+          &>*{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    &_4{
+      .owl-nav{
+        width: 100%;
+        left: 0;
+        top: -40px;
+      }
+      &_bottom {
+        background-size: cover;
+        height: auto;
+        .col-2 {
+          float: none;
+          padding: 20px;
+          margin: 0 auto;
+          width: 60%;
+          text-align: center;
+          &:nth-child(2){
+          position: relative;
+          top: -20px;
+          }
+          .main_qna {
+          margin-top: 0;
+          float: none;
+          }
+        }  
+        .row {
+          top: 100px;
+        }
+      }
+    }
+  }
+  .mid {
+    h3 {width: 100% !important;}
+    .tile {
+      width: 80%;
+      padding-left: 20px;
+      .col-2 {
+        width: 100%;
+        float: none;
+        img {
+          margin: 0 !important;
+          max-width: 100% !important;
+        }
+      }
+    }
+  
+  .row_column_box {
+    width: 30% !important;
+    height: auto !important;
+  }
+  
+  }
+  .last_list li > span:nth-child(2) {
+    padding-right: 0;
+    width: 100%;
+  }
+  #overview .last .ic_inner {
+    float: none;
+  }
+  footer {
+    
+    .row:last-child::before {
+    width: 80%;
+  }
+  }
+  .process .stages {
+    width: 100% !important; margin-bottom: 1em;
+  }
+  .process .stage0::after, .process .stage1::after, .process .stage2::after, .process .stage4::after, .process .stage5::after, .process .stage_lg::after {
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .process .stage_lg {
+    height: 280px;
+    position: relative;
+      &::after {
+        position: absolute;
+        top: 95%;
+        z-index: 1;
+        width: 51px;
+        height: 51px;
+        background: url('./../img/sub/sub1-3_arrow.png');
+      }
+    }
+  .stage4::after {background: url('./../img/sub/sub1-3_arrow.png') !important; left: 52% !important;}
+  .stage5::after {background: none !important;}
+  .process .row.inline-block {top: 0;left: 0;display: block;}
+  .process2 > .row {width: unset;}
+  .process2 > .row:last-child {padding-left: 0;}
+  .process2 .stage3{
+    position: relative;
+    &::after {
+       position: absolute;
+        top: 100%;
+        z-index: 1;
+        width: 51px;
+        height: 51px;
+        background: url('./../img/sub/sub1-3_arrow.png');
+
+        transform: rotate(90deg);
+    }
+  }
+    .process .stages:not(.stage_lg) {
+    margin-right: 0;
+  }
+}
+@media (max-width:1024px) {
+/*beauty program > Remote Consultation*/
+  .sub.beauty > .sub_visual:after{width: 274px; height: 250px;}
+  .sub.beauty .col_list_title{height: 48px; line-height: 1.2;}
+  .sub.beauty .col_list p{height: 130px; margin-top: 1.5em; padding-right: 0;}
+  .sub.beauty .col_list p:before{top: -12px; margin-left: -7.5px;}
+  
+  /*beauty program > Recommend Doctors > view*/
+  .sub.beauty .brd_view_doc_info{width: 100%;}
+  .sub.beauty .brd_view_doc_info_wr{padding-left: 0;}
+  .sub.beauty p.brd_other_cate{font-size: 14px !important;}
+  .sub.beauty .brd_doc_intro_cont{overflow-y:auto;}
+  .sub.beauty .brd_yutb{width: 50%; vertical-align: top;}
+  .sub.beauty .brd_yutb_thumb{width: 100%; text-align: center;}
+  .sub.beauty .brd_doc_other_list{padding-left: 0;}
+  .sub.beauty .brd_doc_other_list .brd_other_row{margin: 0;}
+
+#vision.mid .row .col-2 p {width: 100%;}
+#overview .mid .txtbox {height: auto; padding: 20px 0;}
+sub {font-size: 11px;}
+p {font-size: 12.5px !important;}
+  .sub_title {font-size: 2em;margin-bottom: 1em;}
+  .sub_location_wr {font-size: 14px;}
+  .title_img { margin-bottom: 1em;}
+  .col-6 {width: 33.3333%;}
+  
+  .col-7,.col-1 {width: 100% !important;}
+  #health{
+    .qna_btn {
+      width: 80px;
+      height: 80px;
+      bottom: 2%;
+      left: 80%;
+      font-size: .77em;  
+      a {
+        padding: 20px;
+      }
+    }
+  } 
+  .mid {
+    .p4{padding: 0;}
+  }
+.main_4_txt .dbox p {font-size: .9em !important;}
+.main_4_txt .dbox {height: auto !important; padding-left: 1.2em;margin-top: 2em;}
+.main_4_txt .dbox .col-3 {height: auto;margin-bottom: 0;}
+.modal{
+  width: 90%;
+  height: 70%;
+  padding: 1em;
+  position: fixed;
+}
+}
+@media (max-width:924px){
+.main_1_txt {width: 90%;}
+.slide {background-position: 110% 20%;}
+  .section .main_4_txt .dbox .col-2.row{
+    width: 100%;
+  }
+  .last {
+    .number {font-size: 2.8em;}
+  .section{
+    &:nth-child(2){
+      background:none;
+    }
+    
+    .main_4_txt .dbox {
+      height: auto;
+      margin-top: 1.6em;
+    }
+    .main_4_txt .dbox .col-2 {
+      width: 100%;
+      height: auto;
+      &.row{
+        margin-left: 50px;
+        margin-top: -50px;
+      }
+    }
+    .main_4_txt .dbox .col-3 {
+      height: auto;
+    }
+  }
+  footer .row:last-child::before {
+    width: 60%;
+  }
+  .title{
+    &_img {
+      &::before {
+        width: 280px;
+      }
+    }
+  }
+  .title_img {
+    margin-bottom: 3em;
+  }
+  
+}
+@media (max-width:799px){
+  
+    h3 {font-size: 1em !important;}
+  .sub_txt h2 {font-size: 2.6em;}
+  .sub_visual {background-position: 60%;}
+  .mid {
+    .mb-2{margin-bottom: 0;}
+    .col-2 {width: 100%;}
+    .col-2:nth-child(2n+1)::after{display: none;}
+  }
+  .section{
+    &:nth-child(3) {
+      background-position: 60% 0%;
+      background-size: cover;
+      padding-top: 5em;
+    }
+    &.main_1 {
+      margin-top: 20px;
+    }
+    &.main_2 {
+      margin-top: -40px;
+    }
+  }
+  .main_3 .wbox{
+    width: 100% ;
+  }
+
+  
+  .wbox_img {
+      width: 100%;
+      min-height: 100px;
+      height: auto !important;
+      &>* p {
+        font-size: .8em;
+      }
+  }
+  .col-2.main_2_left {
+    width: 100% !important;
+  }
+  .section .main_4_txt .dbox {
+    margin-bottom: 1em;
+    .col-3::after {
+      top: 60px;
+      height: 50%;
+    }
+  }
+  .title_img {
+    .wbox{
+      width: 90%;
+      &::before{
+        width: 250px;
+        max-width: 100%;
+        background-size: contain;
+      }
+    }
+    
+    img{
+      height: 50%;
+    }
+  }
+  .col-3{width: 100%; margin-bottom: 1.6em;}
+  .main_4_txt .col-3 {width: 33.3333%;}
+  
+  .ft_wrap {
+    .ft_menu {
+      text-align: center;
+    }
+    .col-2, .col-3 {
+      width: 100%;
+    }
+    .col-3 {
+      margin-bottom: 10px;
+    }
+    .text-right {
+      text-align: center;
+    }
+  }
+  #product .page .prd{
+    &_name {
+      h4 {font-size: 1em;}
+      sub {font-size: .77em;}
+    }
+    &_label {
+      &>* {
+        width: 40px;
+        height: 19px;
+        font-size: .78em;
+      }
+    }
+  }
+  .tabs li {padding: 1em;}
+}
+@media (max-width: 924px) and (max-width: 799px) {
+  .title_img img {
+    height: 20%;
+  }
+}
+@media (max-width:767px){
+  .sub_visual{ height: 230px !important; background: #f8f8f8 !important;}
+  /*beauty program > Remote Consultation*/
+  .sub.beauty > .sub_visual .sub_txt{}
+  .sub.beauty > .sub_visual .sub_txt p{width: 300px; max-width: 100%;}
+  .sub.beauty .title_img{width: 100%; margin-left: 0;}
+  .sub.beauty .col_list > div{width: 50%;}
+  .sub.beauty .col_list > div p{height: 90px;}
+  .sub.beauty .col_list_title{height: auto;}
+  .sub.beauty .col_list > div:nth-child(n+3){margin-top: 30px;}
+  .sub.beauty .col_list > div:nth-child(n+3) p{height: 70px;}
+
+  /*beauty program > Recommend Doctors*/
+  .sub.beauty .brd_gall_box{width: 50%;}
+  .sub.beauty .brd_gall_cont_wr{padding: 10px 10px;}
+  .sub_visual, .title_img{width: 100%;}
+  .col-6 {width: 100%; text-align: center; margin-bottom: 10px;}
+  .test_report{
+    padding: 2em !important;
+    &.one_column_list {
+      .tabs .col-6 {
+        width: 50%;
+      }
+    }
+  }
+  .main_2{
+    background: none;
+  }
+  .main_2_img p {display: none;}
+  .brd_tab_row-9 .brd_tab_item {width: 50% !important;}
+}
+@media (max-width:640px){
+  .sub_location {margin-top: -30px;}
+  /*beauty program > Remote Consultation*/
+  .sub.beauty > .sub_visual:after{width: 170px; height: 150px;}
+  .sub.beauty .col_list > div{width: 100%; margin-top: 30px;}
+  .sub.beauty .col_list > div:first-child{margin-top: 0;}
+  .sub.beauty .col_list > div p{height: auto;}
+}
+@media (max-width:540px) {
+.main_1.fp-section .fp-slidesNav.bottom {left: 5% !important;}
+.main_4_txt .dbox {padding-left: 15px;}
+  P {font-size: .88em !important;}
+  .main_1_img{
+    display: none;
+  }
+  .apps {margin-top: 30px;}
+  .main_1 .fp-slidesNav.bottom {
+    bottom: 40px;
+    left: -50px !important;
+  }
+  
+  .fp-slides {
+    .slide .col-2 {
+      width: 100%;
+    }
+  }
+  .main_4{
+    background-position: 40% 0;
+    .main_4_txt .dbox .col-3 sub {
+      font-size: 12px;
+    }
+  }
+  .section .main_4_txt .dbox {
+    font-size: 2.5em;
+    p {
+      padding: 10px;
+    }
+    .col-2.row{
+      margin-left: 25px;
+    }
+    .col-3::after {
+      top: 50px;
+      left: -10px;
+      height: 40%;
+    }
+    .count {
+      font-size: 1em;
+    }
+  }
+  .main_2_img .col-2 {
+    padding: 0px;
+  }
+  .main_3 .wbox_img>*{
+      width: 6em;
+      height: 6em;
+    }
+  .main_4_bottom .row {
+  top: 150px;
+    .col-2 p {
+      font-size: 20px;
+    }
+  }
+  .col-2.main_1_txt {
+    padding-top: 3em;
+    h1 {
+      font-size: 2em;
+    }
+  }
+  .col-3.row_column_box.row_column_auto {
+    width: 100% !important;
+  }
+  #business .mid .row_column_auto:not(:last-child)::after{
+    top: 90%;
+    left: 46%;
+    transform: rotate(90deg);
+  }
+  .col-3.row_column_box {
+    width: 100% !important;
+  }
+}
+
+@media (max-width:344px) {
+  .main_3 .wbox_title::after{
+    right: 100px;
+  }
+  .main_3 .wbox_img {
+    width: 100%;
+  }
+  .main_1 .slide .row.wrapper {margin-top: 30px;}
+}
+}

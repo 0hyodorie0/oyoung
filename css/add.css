@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* sub > beauty program */
+.beauty .sub_in{padding-bottom: 80px;}
+
+/* sub > beauty program > review */
+#doctor_review{}
+.recommend .brd_gall {margin-bottom: 40px;}
+.brd_gall{margin: -25px -10px; font-size: 0;}
+.brd_gall_box{padding: 25px 10px; display: inline-block; vertical-align: top; width: 25%;}
+.brd_gall_box_in{}
+.brd_gall_thumb_wr{position: relative;}
+.brd_gall_thumb{overflow: hidden; position: relative; min-height: 374px;}
+.brd_gall_thumb:before{display: block; width: 100%; height: 100%; background: rgba(255,255,255,0.8); position: absolute; left: 0; top: 0; opacity: 0; transition: 0.3s; z-index: 1;}
+.brd_gall_thumb:after { display: block;
+  width: 125px; height: 125px; background: url(./../img/sub/sub5_ic1.png) no-repeat center center; position: absolute; transform: rotate(0deg);opacity: 0; transition: 0.5s; z-index: 1;top: 35%;left: 30%;
+}
+.brd_gall_thumb img{transition: 0.4s;}
+.brd_gall_cate{position: absolute; right: 20px; top: 20px; max-width: 115px; text-align: right;}
+.brd_gall_cate_box{min-width: 65px; background: #ff527d; border-radius: 15px; line-height: 30px; font-size: 14px; font-weight: 300; color: #ffffff; margin-bottom: 5px; padding: 0 15px; text-align: center; display: inline-block;}
+.brd_gall_cate_box:last-child{margin-bottom: 0;}
+.brd_gall_cont_wr{padding: 17px 20px; border: 1px solid #e1e7e9;}
+.brd_gall_tit{font-size: 16px; font-weight: 400; color: #000000; margin: 0 0 10px; transition: 0.3s;}
+.brd_gall_info_wr{margin: 0 -12px;}
+.brd_gall_info{font-size: 16px; font-weight: 300; color: #999999; padding: 0 12px; display: inline-block; vertical-align: middle; margin: 0;}
+.brd_gall_info_name{position: relative;}
+.brd_gall_info_name:after{position: absolute; content:""; display: block; width: 1px; height: 13px; background: #a9a9a9; right: 0; top: 50%; margin-top: -7px;}
+.brd_gall_info_date{}
+.brd_gall_sub {
+  font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 13px;
+    display: inline-block;
+    color: #999;
+}
+.brd_gall_info_job {
+  font-size: 14px;
+  color: #666;
+}
+
+.brd_gall_box_in:hover .brd_gall_tit{color: #ff1b61;}
+.brd_gall_box_in:hover .brd_gall_thumb img{-webkit-transform: scale(1.3);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  }
+.brd_gall_box_in:hover .brd_gall_thumb:before{opacity: 1; display: block;}
+.brd_gall_box_in:hover .brd_gall_thumb:after{opacity: 1; display: block;transform: rotate(90deg);}
+
+.brd_tab{overflow-x: auto; white-space: nowrap; margin-bottom: 40px;}
+.brd_tab_row{font-size: 0; display: table; width: 100%; border-bottom: 1px solid #e5e5e5;}
+.brd_tab_item{display: table-cell; vertical-align: middle; text-align: center; padding: 15px 5px; position: relative;}
+.brd_tab_row-4 .brd_tab_item{width: 25%;}
+.brd_tab_row-5 .brd_tab_item{width: 20%;}
+.brd_tab_row-6 .brd_tab_item{width: 16.666666%;}
+.brd_tab_row-8 .brd_tab_item{width: 12.5%;}
+.brd_tab_row-9 .brd_tab_item{width: 11.111111%;}
+.brd_tab_item a{font-size: 18px; font-weight: 500; color: #999;}
+.brd_tab_item_act:after{width: 100%; height: 2px; background: #ff1b61; content:""; position: absolute; bottom: 0; left: 0;}
+.brd_tab_item_act a{color: #ff1b61;}
+
+.brd_paging{margin-top: 60px; font-size: 0; text-align: center;}
+.brd_btn{display: inline-block; vertical-align: top; padding: 0 3px;}
+.brd_btn a{width: 30px; height: 30px; border-radius: 50%; border: 1px solid #c3c3c3; text-align: center; line-height: 30px;}
+.brd_arr{padding: 0 10px;}
+.brd_arr .brd_prev_btn{background: url(./../img/sub/sub5_arr1.png) no-repeat center center;}
+.brd_arr .brd_next_btn{background: url(./../img/sub/sub5_arr2.png) no-repeat center center;}
+.brd_num{}
+.brd_num_btn{font-size: 14px; font-weight: 300; color: #c3c3c3; transition: 0.3s;}
+.brd_num:hover .brd_num_btn{color: #fff; background: #ff1b61; border: 1px solid #ff1b61;}
+
+.brd_view{}
+.brd_view_header{padding: 27px 0 20px; border-top: 1px solid #0f0f0f; border-bottom: 1px solid #e5e5e5; font-size: 0;}
+.brd_view_tit_wr{display: inline-block; vertical-align: middle; width: calc(100% - 350px); width: -moz-calc(100% - 350px); width: -webkit-calc(100% - 350px); width: -o-calc(100% - 350px); position: relative;}
+.brd_view_category{font-size: 14px; font-weight: 400; color: #ff1b61; display: inline-block; vertical-align: middle; border: 1px solid #ff1b61; border-radius: 15px; line-height: 28px; padding: 0 15px; min-width: 65px; text-align: center; margin: 0;}
+.brd_view_tit{font-size: 18px; font-weight: 400; color: #000000; display: inline-block; vertical-align: middle; padding-left: 15px;}
+.brd_view_info_wr{display: inline-block; vertical-align: middle; min-width: 350px; text-align: right;}
+.brd_view_info_wr p{margin: 0;}
+.brd_view_writer{font-size: 16px; font-weight: 300; color: #999; display: inline-block; vertical-align: middle; padding-right: 15px; position: relative;}
+.brd_view_writer:after{position: absolute; display: block; width: 1px; height: 13px; background: #a9a9a9; right: 0; top: 50%; margin-top: -6px; content:""}
+.brd_view_date{font-size: 16px; font-weight: 300; color: #999; display: inline-block; vertical-align: middle; padding-left: 15px; padding-right: 20px;}
+
+.brd_view_cont{padding-top: 42px; padding-bottom: 40px; border-bottom: 1px solid #f7f7f7;}
+.brd_view_thumb{display: block; margin-bottom: 20px;}
+.brd_view_txt{margin: 0; font-size: 16px; font-weight: 300; color: #666; }
+
+.brd_view_add{padding: 38px 0 35px; border-bottom: 1px solid #e5e5e5;}
+.brd_view_add_row{font-size: 0; margin-bottom: 5px;}
+.brd_view_add_row:last-child{margin-bottom: 0;}
+.brd_view_add_item{display: inline-block; vertical-align: top;}
+.brd_view_add_tit{font-size: 18px; font-weight: 400; color: #0f0f0f; padding-left: 10px; position: relative; width: 145px;}
+.brd_view_add_tit:before{content:""; width: 4px; height: 4px; border-radius: 50%; background: #ff1b61; position: absolute; left: 0; top: 10px;}
+.brd_view_add_txt{width: calc(100% - 145px); width: -moz-calc(100% - 145px); width: -webkit-calc(100% - 145px); width: -o-calc(100% - 145px); padding-left: 30px; position: relative;}
+.brd_view_add_txt:before{content:""; width: 1px; height: 14px; background: #e5e5e5; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.brd_view_add_txt p{font-size: 16px; font-weight: 300; color: #666666; margin: 0;}
+.brd_view_add_txt a{font-size: 16px; font-weight: 300; color: #ff1b61; margin: 0;}
+.brd_view_add_txt a img{margin-left: 5px;}
+
+.brd_ctrl_wr{text-align: right; margin-top: 40px; font-size: 0;}
+.brd_ctrl_list{cursor: pointer; width: 160px; background: #ff527d; font-size: 16px; font-weight: 300; color: #fff; border: none; display: inline-block; vertical-align: middle; text-align: center; line-height: 52px;}
+
+.brd_other_list_wr{margin-top: 45px;}
+.brd_other_list_tit{font-size: 22px; font-weight: 400; color: #0f0f0f; margin: 0 0 10px;}
+.brd_other_list{border-top: 1px solid #0f0f0f;}
+.brd_other_list p{margin: 0;}
+.brd_other_row{padding: 20px 0; font-size: 0; border-bottom: 1px solid #f7f7f7;}
+.brd_other_row:last-child{border-bottom: 1px solid #e5e5e5;}
+.brd_other_thumb{width: 95px; line-height: 115px; margin-right: 30px; display: inline-block; vertical-align: middle;}
+.brd_other_txt_wr{display: inline-block; vertical-align: middle; width: calc(100% - 425px); width: -moz-calc(100% - 425px); width: -webkit-calc(100% - 425px); width: -o-calc(100% - 425px);}
+.brd_other_cate{font-size: 14px; font-weight: 400; color: #ff1b61; display: inline-block; vertical-align: middle; border: 1px solid #ff1b61; border-radius: 15px; line-height: 28px; padding: 0 15px; min-width: 65px; text-align: center; margin: 0;}
+.brd_other_cont{font-size: 16px; font-weight: 300; color: #666; margin-bottom: 6px; display: inline-block; vertical-align: middle; padding-left: 20px;}
+.brd_other_info_wr{min-width: 300px; display: inline-block; vertical-align: middle; text-align: right;}
+.brd_other_info_box{padding: 0 15px; display: inline-block; vertical-align: middle; border-right: 1px solid #999;}
+.brd_other_info_box:last-child{border-right: none;}
+.brd_other_info{font-size: 16px; font-weight: 300; color: #999; line-height: 1;}
+
+
+/* 추가 */
+.sub_cont .cont_wr::before {display: none;}
+.sub_cont .cont_wr{background: rgb(249, 249, 249);}
+
+
+@media (max-width:1660px) {
+
+  /* product > products view */
+  .prd_top{padding-left: 150px;}
+  .prd_top .prd_view_img_thm{left: -130px; width: 130px;}
+  .prd_top .prd_view_txt {padding-left: 3em;}
+
+
+
+
+}
+
+
+@media (max-width:1440px) {
+
+  /* common */
+  body{margin: 0;}
+  .sub_visual {width: 100%; margin: 0;}
+  .title_img{margin-left: 0; height: auto;}
+  .title_img .wbox {top: inherit; left: inherit; transform: none; margin: -70px auto 0; width: 80%;}
+    
+  /*health program > REAL EXPERIENCE REVIEW*/
+  .one_column_open {margin-top: 1.5em; margin-bottom: 1.5em;}
+  .one_column_cont {margin-bottom: 0;}
+
+  /*health program > product */
+  #product .page .prd_tiles .col-3 {width: calc(33% - 15px);}
+  #product .page .prd_tiles .col-3:nth-child(3n){margin-right: 0;}
+
+
+
+
+}
+
+@media (max-width:1280px) {
+
+  /*health program > products view */
+  .prd_top{padding-left: 0;}
+  .prd_top .prd_view_img_thm{position: relative; left: inherit; width: auto; height: auto; margin-top: 20px;}
+  .prd_top .prd_view_img_thm .thm_wr {margin-bottom: 10px;}
+  .prd_top .prd_view_btn .btn{width: calc(50% - 10px); padding: 10px 10px;}
+
+  /*health program > product */
+  #product .page .prd_search input {width: 100%;}
+  #product .page .prd_tiles .col-3::before {left: 50%; top: 50%; margin-top: -62.5px; margin-left: -62.5px;}
+
+
+}
+
+@media (max-width:1024px) {
+
+  /*health program > OYOUNG Health Program */
+  .one_column_cont {max-height: 400px;}
+  .one_column_txt {width: 100%; padding-right: 0; padding-top: 18%;}
+  .one_column_img{position: absolute; width: 28%;}
+  .para {margin-top: 10px;}
+  .one_column_open {margin-top: 1em; margin-bottom: 1em;}
+  
+  /*health program > products view */
+  .prd_top .prd_view_txt {padding-left: 1.5em; padding-top: 0;}
+  .prd_top .prd_view_title {font-size: 1.8em; line-height: 1.2;}
+  .prd_top .prd_view_img_thm .thm_wr {width: 32%; height: auto;}
+
+  /*health program > product */
+  #product .page_title .row .col .dep_btn {width: auto !important; padding: 10px 20px 8px;}
+  #product .page_title .row .sm_category + .col-4{text-align: right; width: 100%; margin-top: 20px;}
+  .prd_search{position: relative;}
+  #product .page .prd_search input {max-width: 250px;}
+
+
+
+}
+
+@media (max-width:767px){
+  
+  /*health program > OYOUNG Health Program */
+  .one_column_cont {padding-top: 1.3em; padding-bottom: 1.3em;}
+  .one_column_txt {padding-top: 33%;}
+  .one_column_title {font-size: 1.4em;}
+  .one_column_img{width: 50%;}
+  
+  /*health program > products view */
+  #product_view{overflow: hidden;}
+  .prd_top .col-2 {width: 100%;}
+  .prd_view_img{text-align: center;}
+  .prd_view_img img{max-width: 80%;}
+  .prd_top .prd_view_img_thm {text-align: center;}
+  .prd_top .prd_view_img_thm .thm_wr {width: auto; max-width: 18%;}
+  .prd_top .prd_view_txt {padding-left: 0; padding-top: 10px;}
+  .prd_top .prd_view_title ~ p{margin-bottom: 1.5em;}
+  .hashtag {padding: 15px 0; margin-bottom: 1em;}
+  .prd_top .prd_view_btn .btn {font-size: 16px;}
+  .prd_cont_wr {padding: 20px 0;}
+  
+  /*health program > product */
+  #product .py-2 {padding: 20px 0;}
+  #product .page_title .row .col .dep_btn {margin-right: 3px !important; margin-bottom: 7px; font-size: 14px;}
+  #product .page_title .row .sm_category {margin-top: 0;}
+  #product .page .prd_tiles .col-3 {width: calc(50% - 15px); margin-bottom: 10px; margin-right: 10px !important;}
+  #product .page .prd_tiles .col-3:nth-child(2n){margin-right: 0 !important;}
+
+
+
+  
+}
+
+@media (max-width:640px){
+
+}
+
+@media (max-width:480px) {
+  
+  /*health program > OYOUNG Health Program */
+  .one_column_img{width: 70%;}
+  .one_column_txt {padding-top: 46%;}
+  .prd_top .prd_view_title {font-size: 1.5em;}
+  .prd_top .prd_view_img_thm .thm_wr {width: auto; max-width: 22%;}
+  
+  .prd_top .prd_view_btn .btn{width: 100%; margin-right: 0; margin-bottom: 10px;}
+
+  /*health program > product */
+  #product .page .prd_tiles .col-3 {width: 100%; margin-right: 0 !important;}
+
+
+}
